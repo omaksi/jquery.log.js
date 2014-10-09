@@ -6,7 +6,7 @@ jQuery Log Plugin - chainable console.log replacement
 - chainable
 - can be enabled/disabled in code or runtime
 
-#Usage:
+###Usage:
 
 As a chainable jQuery command 
 
@@ -20,7 +20,15 @@ As a standalone command
 $.log($('body'));
 ```
 
-#API:
+To enable/disable
+
+```
+$.log.enable();
+$.log.disable();
+```
+
+
+###API:
 
 *.enable*
 
@@ -34,17 +42,24 @@ disables logging
 
 sets specified options passed as an object
 
-# Options 
+###Options 
 
-*.enabled*
+*enabled*
 
-boolean - self explanatory
+boolean - self explanatory 
+
 default: true
 
-*.loopArrays*
+*loopArrays*
 
 boolean - if set to true, when logging an array, iterates the array and logs each array element individually
 
-#License:
+default: false
+
+###Author:
+
+
+
+###License:
 
 MIT License
